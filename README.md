@@ -67,7 +67,7 @@ To set up and run this project locally, follow these steps:
       - Register or log in to apply for services.
       - View and track the status of applications.
       - Manage personal profile and view application statistics.
-        https://github.com/user-attachments/assets/a715c971-9e23-4626-a50c-0afb5509b798
+        
 
 ## Contributing
   - **If you would like to contribute to this project, please follow these steps**:
@@ -76,3 +76,7 @@ To set up and run this project locally, follow these steps:
       - Make your changes and commit them (git commit -m "Added a feature").
       - Push to the branch (git push origin feature-name).
       - Create a Pull Request.
+   
+
+
+https://github.com/user-attachments/assets/a715c971-9e23-4626-a50c-0afb5509b798
