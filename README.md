@@ -47,5 +47,25 @@ To set up and run this project locally, follow these steps:
    - Copy the Firebase SDK configuration and replace the contents of src/firebase/firebaseConfig.js with your configuration.
 
 ## Running the Project
-  ```bash
-  npm start
+    ```bash
+    npm start
+
+## Usage
+  - **Admin**:
+      - Log in with admin credentials.
+      - Manage services, view applications, and update statuses.
+  - **Staff**:
+      - Log in with staff credentials.
+      - View pending applications and update them based on review.
+  - **User**:
+      - Register or log in to apply for services.
+      - View and track the status of applications.
+      - Manage personal profile and view application statistics.
+
+## Contributing
+  - **If you would like to contribute to this project, please follow these steps**:
+      - Fork the repository.
+      - Create a new branch (git checkout -b feature-name).
+      - Make your changes and commit them (git commit -m "Added a feature").
+      - Push to the branch (git push origin feature-name).
+      - Create a Pull Request.
