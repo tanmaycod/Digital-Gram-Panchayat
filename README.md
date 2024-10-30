@@ -67,6 +67,7 @@ To set up and run this project locally, follow these steps:
       - Register or log in to apply for services.
       - View and track the status of applications.
       - Manage personal profile and view application statistics.
+  https://github.com/user-attachments/assets/a715c971-9e23-4626-a50c-0afb5509b798
         
 
 ## Contributing
@@ -79,4 +80,4 @@ To set up and run this project locally, follow these steps:
    
 
 
-https://github.com/user-attachments/assets/a715c971-9e23-4626-a50c-0afb5509b798
+
