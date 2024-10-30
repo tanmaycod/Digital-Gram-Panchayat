@@ -13,4 +13,48 @@ The Digital Gram Panchayat project is a web application designed to help manage 
 
 ## Project Structure
 
-Digital-Gram-Panchayat/ │ ├── public/ # Public files and main HTML template │ └── index.html # Main HTML file │ ├── src/ │ ├── assets/ # Assets like images, fonts, and icons │ ├── components/ # Reusable components │ │ ├── Admin/ # Admin-specific components │ │ ├── Staff/ # Staff-specific components │ │ ├── User/ # User-specific components │ │ └── Common/ # Shared components (e.g., Navbar, Footer) │ ├── pages/ # Different pages in the application │ ├── firebase/ # Firebase configuration and initialization │ │ └── firebaseConfig.js # Firebase SDK setup │ ├── styles/ # Global and component-specific styles │ ├── App.js # Main app component │ └── index.js # Entry point for React application │ ├── .gitignore # Files to ignore in Git ├── README.md # Project documentation └── package.json # Project metadata and dependencies
+# Digital Gram Panchayat
+
+This is a web application project that provides a digital solution for managing and processing services in a Gram Panchayat. The system includes roles for Admin, Staff, and Users with distinct access levels and functionalities. It’s built using **React.js** for the frontend and **Firebase** for backend services such as authentication and Firestore.
+
+## Table of Contents
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Setup & Installation](#setup--installation)
+- [Running the Project](#running-the-project)
+- [Usage](#usage)
+
+## Project Structure
+
+The project structure is as follows:
+
+```plaintext
+Digital-Gram-Panchayat/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Admin/
+│   │   │   ├── AdminDashboard.js
+│   │   │   ├── CreateService.js
+│   │   │   └── ManageServices.js
+│   │   ├── Staff/
+│   │   │   ├── StaffDashboard.js
+│   │   │   └── StaffUpdateApplicationStatus.js
+│   │   ├── User/
+|   |   |   ├── UserDashboard.js
+│   │   │   ├── ApplyService.js
+│   │   │   └── UserProfile.js
+│   │   ├── Shared/
+│   │   │   ├── Sidebar.js
+│   │   │   └── TopNavbar.js
+│   ├── firebase/
+│   │   └── firebaseConfig.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+├── .gitignore
+├── package.json
+└── README.md
+
