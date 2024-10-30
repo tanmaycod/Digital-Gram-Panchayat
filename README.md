@@ -51,7 +51,8 @@ To set up and run this project locally, follow these steps:
 
 ## Usage
   - **Login and Registration**:
-      https://github.com/user-attachments/assets/872e7ea8-60fc-4439-bedc-fec726a58c93
+  
+https://github.com/user-attachments/assets/872e7ea8-60fc-4439-bedc-fec726a58c93
 
   - **Admin**:
       - Log in with admin credentials.
