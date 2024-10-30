@@ -1,0 +1,124 @@
+
+
+
+.staff-dashboard {
+  background: #f7f7f8;
+  height: 100%;
+  color: #333;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
+
+}
+
+/* Custom Neumorphic Navbar Styling */
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #333 !important;
+  display: flex;
+  align-items: center;
+}
+
+.brand-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.nav-item {
+  color: #333 !important;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #007bff !important;
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.logout {
+  color: #ff3b3b !important;
+}
+
+.logout:hover {
+  color: #ff7070 !important;
+  transform: scale(1.1);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  background: transparent;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 0.6s ease;
+  
+}
+
+/* Welcome Message */
+.welcome-message {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Neumorphic Button */
+.nav-item {
+  margin: 10px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px #b8b8b8, -6px -6px 12px #ffffff;
+  color: #555;
+}
+
+.nav-item:hover {
+  background: #d4d4d4;
+  box-shadow: 4px 4px 8px #b8b8b8, -4px -4px 8px #ffffff;
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-navbar {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    width: 90%;
+  }
+
+  .nav-item {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

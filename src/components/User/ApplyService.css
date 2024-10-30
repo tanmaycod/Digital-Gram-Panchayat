@@ -1,0 +1,120 @@
+
+/* Container and Layout */
+.user-service-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  height: 100%;
+}
+
+/* Title */
+.user-service-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* Tabs */
+.user-service-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-service-tab {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #2980b9;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.user-service-tab.active {
+  background: #2980b9;
+  color: #fff;
+}
+
+/* Service Card Grid */
+.user-service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Service Card */
+.user-service-card {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 4px 4px 12px #d6ebeb, inset -4px -4px 12px #f0dbec;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 15px #e3fdfd, -8px -8px 15px #ffe6fa;
+}
+
+/* Apply Button */
+.user-service-apply-btn {
+  background: #27ae60;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.user-service-apply-btn:hover {
+  background: #2ecc71;
+}
+
+/* Status Indicator */
+.user-service-status {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.user-service-status.pending {
+  color: #f39c12;
+}
+
+.user-service-status.approved {
+  color: #27ae60;
+}
+
+.user-service-status.rejected {
+  color: #e74c3c;
+}
+
+/* Pagination */
+.user-service-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.user-service-page-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #34495e;
+  border-radius: 8px;
+}
+
+.user-service-page-btn.active {
+  background: #2980b9;
+  color: #fff;
+}

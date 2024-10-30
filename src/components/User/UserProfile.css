@@ -1,0 +1,101 @@
+.user-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.user-profile-card {
+  background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.15), -8px -8px 12px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-out;
+}
+
+.user-profile-icon {
+  font-size: 4rem;
+  color: #4a90e2;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.user-profile-details input {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.user-profile-edit-btn, .user-profile-save-btn {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-profile-edit-btn:hover, .user-profile-save-btn:hover {
+  transform: scale(1.05);
+}
+
+.user-profile-stats {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.user-profile-stat-card {
+  background: transparent;
+  border-radius: 15px;
+  padding: 20px;
+  width: 120px;
+  box-shadow: 6px 6px 12px #e3fdfd, -6px -6px 12px #ffe6fa;
+  text-align: center;
+}
+
+.user-profile-charts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.user-profile-doughnut, .user-profile-line {
+  width: 45%;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.1), -8px -8px 12px rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 15px;
+  backdrop-filter: blur(15px);
+}

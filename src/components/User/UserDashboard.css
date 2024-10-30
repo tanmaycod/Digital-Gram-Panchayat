@@ -1,0 +1,125 @@
+
+/* Wrapper Layout */
+.user-dashboard-wrapper {
+  display: flex;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.user-sidebar {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: width 0.3s ease;
+  color: #2c3e50;
+  border-radius: 10px;
+}
+
+.user-collapsed {
+  width: 130px;
+}
+
+.user-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.user-brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.user-sidebar-links .user-dashboard-tab,
+.user-logout-tab {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: #34495e;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.user-sidebar-links .user-dashboard-tab:hover, .user-logout-tab:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.user-active-tab {
+  background: rgba(52, 152, 219, 0.2);
+  color: #2980b9;
+}
+
+.user-tab-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #34495e;
+}
+
+.user-collapsed .user-tab-icon {
+  margin-right: 0;
+}
+
+.user-tab-text {
+  display: inline;
+  font-weight: 500;
+}
+
+.user-collapsed .user-tab-text {
+  display: none;
+}
+
+/* Main Content Area */
+.user-main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.user-content {
+  width: 100%;
+  padding: 25px;
+  background: transparent;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .user-main-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-sidebar {
+    padding: 10px;
+  }
+  .user-tab-icon {
+    font-size: 1rem;
+  }
+}

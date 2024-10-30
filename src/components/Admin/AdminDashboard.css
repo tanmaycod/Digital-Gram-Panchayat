@@ -1,0 +1,248 @@
+
+/* Wrapper Layout */
+.dashboard-wrapper {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: #f7f7f8;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, rgba(45, 156, 219, 1) 0%, rgba(37, 99, 235, 1) 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: width 0.3s ease;
+  color: #ffffff;
+}
+
+.collapsed {
+  width: 130px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.brand-logo {
+  font-size: 1.8rem;
+}
+
+
+.sidebar-links .dashboard-tab,
+.logout-tab {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  color: #b8b8c3;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar-links .dashboard-tab:hover, .logout-tab:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+  border-radius: 8px;
+}
+
+.active-tab {
+  background: rgba(0, 230, 255, 0.2);
+  color: #00e6ff;
+  border-radius: 8px;
+}
+
+.tab-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.collapsed .tab-icon {
+  margin-right: 0;
+}
+
+.tab-text {
+  display: inline;
+}
+
+.collapsed .tab-text {
+  display: none;
+}
+
+.toggle-button {
+  background: transparent;
+  border: none;
+  color: #ecf1f1;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.collapsed .toggle-button {
+  margin-left: auto;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+  background: transparent;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-dropdown {
+  position: relative;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Content Area */
+.content {
+  padding: 20px;
+  height: calc(100vh - 60px); 
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+/* Large devices (laptop and desktop) */
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 250px;
+  }
+  .collapsed {
+    width: 130px;
+  }
+}
+
+/* Medium devices (tablet) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+  .collapsed {
+    width: 130px;
+  }
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+  .tab-icon {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small devices (mobile) */
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .collapsed {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tab-icon {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  .tab-text {
+    display: none; 
+  }
+
+  .toggle-button {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 10px;
+  }
+  .tab-icon {
+    font-size: 1rem;
+  }
+  .main-content {
+    padding: 10px;
+  }
+}

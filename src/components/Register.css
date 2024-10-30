@@ -1,0 +1,168 @@
+
+
+
+.register-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-wrapper {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-y: auto; 
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+form input:focus {
+    border-color: #ff6b4d;
+    box-shadow: 0 4px 12px rgba(255, 107, 77, 0.3);
+}
+
+.terms-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+.terms-container input {
+    margin-right: 8px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #ff6b4d;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #e65a3c;
+}
+
+.sign-in-link {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+.sign-in-link a {
+    color: #ff6b4d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.illustration-section {
+    width: 50%;
+    background: #ff6b4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.illustration-section img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .form-wrapper {
+        max-width: 800px;
+    }
+
+    .form-container,
+    .illustration-section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        flex-direction: column;
+        max-width: 90%;
+        height: auto;
+    }
+    
+    .form-container,
+    .illustration-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-container {
+        overflow-y: visible;
+    }
+
+    .illustration-section {
+        background: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .google-signup-btn, form input, .submit-button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
