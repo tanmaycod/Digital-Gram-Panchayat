@@ -3,46 +3,12 @@
 The Digital Gram Panchayat project is a web application designed to help manage and streamline administrative services for Gram Panchayats. This project enables users to apply for various services, track application statuses, and allows admin and staff to monitor and manage applications efficiently.
 
 ## Table of Contents
-- [Project Structure](#project-structure)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Running the Project](#running-the-project)
 - [Usage](#usage)
 - [Contributing](#contributing)
-
-## Project Structure
-The project structure is as follows:
-
-Digital-Gram-Panchayat/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── Admin/
-│   │   │   ├── AdminDashboard.js
-│   │   │   ├── CreateService.js
-│   │   │   └── ManageServices.js
-│   │   ├── Staff/
-│   │   │   ├── StaffDashboard.js
-│   │   │   └── StaffUpdateApplicationStatus.js
-│   │   ├── User/
-|   |   |   ├── UserDashboard.js
-│   │   │   ├── ApplyService.js
-│   │   │   └── UserProfile.js
-│   │   ├── Shared/
-│   │   │   ├── Sidebar.js
-│   │   │   └── TopNavbar.js
-│   ├── firebase/
-│   │   └── firebaseConfig.js
-│   ├── App.js
-│   ├── index.js
-│   └── App.css
-├── .gitignore
-├── package.json
-└── README.md
-
 
 ## Features
 - **Admin Panel**: Manage services, update application statuses, and view analytics.
@@ -73,3 +39,13 @@ To set up and run this project locally, follow these steps:
 2. **Install Dependencies**:
    ```bash
    npm install
+
+3. **Firebase Configuration**:
+   - Create a Firebase project at Firebase Console.
+   - Set up Firestore, Authentication, and Storage.
+   - In the Firebase Console, go to Project Settings > General > Your apps, and add a new Web app.
+   - Copy the Firebase SDK configuration and replace the contents of src/firebase/firebaseConfig.js with your configuration.
+
+## Running the Project
+  ```bash
+  npm start
