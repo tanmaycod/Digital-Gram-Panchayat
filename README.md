@@ -14,7 +14,6 @@ The Digital Gram Panchayat project is a web application designed to help manage 
 ## Project Structure
 The project structure is as follows:
 
-```plaintext
 Digital-Gram-Panchayat/
 ├── public/
 │   ├── index.html
