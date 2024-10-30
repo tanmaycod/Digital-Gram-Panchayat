@@ -51,23 +51,23 @@ To set up and run this project locally, follow these steps:
 
 ## Usage
   - **Login and Registration**:
-      - https://github.com/user-attachments/assets/872e7ea8-60fc-4439-bedc-fec726a58c93
+      https://github.com/user-attachments/assets/872e7ea8-60fc-4439-bedc-fec726a58c93
 
   - **Admin**:
       - Log in with admin credentials.
       - Manage services, view applications, and update statuses.
-      - https://github.com/user-attachments/assets/dc6bfa96-51f0-4eaa-9d0d-03b8ebfc5acf
+        https://github.com/user-attachments/assets/dc6bfa96-51f0-4eaa-9d0d-03b8ebfc5acf
 
   - **Staff**:
       - Log in with staff credentials.
       - View pending applications and update them based on review.
-      - https://github.com/user-attachments/assets/6c18fd1a-a104-405c-9db5-8b09784aaff1
+        https://github.com/user-attachments/assets/6c18fd1a-a104-405c-9db5-8b09784aaff1
 
   - **User**:
       - Register or log in to apply for services.
       - View and track the status of applications.
       - Manage personal profile and view application statistics.
-      - https://github.com/user-attachments/assets/a715c971-9e23-4626-a50c-0afb5509b798
+        https://github.com/user-attachments/assets/a715c971-9e23-4626-a50c-0afb5509b798
 
 ## Contributing
   - **If you would like to contribute to this project, please follow these steps**:
