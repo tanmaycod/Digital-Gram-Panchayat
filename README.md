@@ -45,10 +45,9 @@ To set up and run this project locally, follow these steps:
    - Set up Firestore, Authentication, and Storage.
    - In the Firebase Console, go to Project Settings > General > Your apps, and add a new Web app.
    - Copy the Firebase SDK configuration and replace the contents of src/firebase/firebaseConfig.js with your configuration.
-
-## Running the Project
-    ```bash
-    npm start
+ 
+  ## Running the Project:
+      npm start
 
 ## Usage
   - **Admin**:
