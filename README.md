@@ -57,12 +57,14 @@ https://github.com/user-attachments/assets/872e7ea8-60fc-4439-bedc-fec726a58c93
   - **Admin**:
       - Log in with admin credentials.
       - Manage services, view applications, and update statuses.
-        https://github.com/user-attachments/assets/dc6bfa96-51f0-4eaa-9d0d-03b8ebfc5acf
+
+https://github.com/user-attachments/assets/dc6bfa96-51f0-4eaa-9d0d-03b8ebfc5acf
 
   - **Staff**:
       - Log in with staff credentials.
       - View pending applications and update them based on review.
-        https://github.com/user-attachments/assets/6c18fd1a-a104-405c-9db5-8b09784aaff1
+
+https://github.com/user-attachments/assets/6c18fd1a-a104-405c-9db5-8b09784aaff1
 
   - **User**:
       - Register or log in to apply for services.
